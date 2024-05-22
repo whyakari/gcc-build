@@ -45,7 +45,7 @@ download_resources() {
   sed -i '/^development=/s/true/false/' binutils/bfd/development.sh
   echo "Cloned binutils!"
   echo "Cloning GCC"
-  git clone git://gcc.gnu.org/git/gcc.git -b releases/gcc-14 gcc --depth=1
+  git clone git://gcc.gnu.org/git/gcc.git -b master gcc --depth=1
   cd "${WORK_DIR}"
   echo "Downloaded prerequisites!"
 }
