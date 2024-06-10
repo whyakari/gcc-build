@@ -63,7 +63,7 @@ build_binutils() {
     --disable-werror \
     --enable-gold \
     --prefix="$PREFIX" \
-    --with-pkgversion="Eva Binutils" \
+    --with-pkgversion="Moe Binutils" \
     --with-sysroot
   make -j"$JOBS"
   make install -j"$JOBS"
@@ -101,7 +101,7 @@ build_gcc() {
     --with-headers="/usr/include" \
     --with-linker-hash-style=gnu \
     --with-newlib \
-    --with-pkgversion="Eva GCC" \
+    --with-pkgversion="Moe GCC" \
     --with-sysroot
 
   make all-gcc -j"$JOBS"
